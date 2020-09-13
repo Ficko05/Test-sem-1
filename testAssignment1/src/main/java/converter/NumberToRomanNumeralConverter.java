@@ -60,7 +60,6 @@ public class NumberToRomanNumeralConverter {
         if (numb <= 999) return "CM";
 
 
-
         return null;
     }
 
