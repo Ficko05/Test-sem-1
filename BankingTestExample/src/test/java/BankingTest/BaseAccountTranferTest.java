@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BaseAccountTranferTest {
     private BaseAccount source;
     private BaseAccount  destination;
+    private Bank bank;
 
     @BeforeEach
     public void setup(){
@@ -57,5 +58,31 @@ public class BaseAccountTranferTest {
         // Assert
         assertEquals(balanceBefor + amount, destination.getBalance());
 
+    }
+
+    @Test
+    public void testSourceBalanceIsUpdatedOnTransferByNumber() {
+        // Arrange
+
+        // Act
+        long balanceBefor = source.getBalance();
+        long amount = 100_00;
+        String destinationNumber = "XYZ-789";
+        source.transfer(amount, destinationNumber);
+        // Assert
+        assertEquals(balanceBefor - amount, source.getBalance());
+    }
+    @Test
+    public void testDestinationBalanceIsUpdatedOnTransferByNumber() {
+        // Arrange
+
+        // Act
+        String destinationNumber = "XYZ-789";
+        BaseAccount destination = bank.getAccount(destinationNumber);
+        long balanceBefor = source.getBalance();
+        long amount = 200_00;
+        source.transfer(amount, destinationNumber);
+        // Assert
+        assertEquals(balanceBefor + amount, destination.getBalance());
     }
 }

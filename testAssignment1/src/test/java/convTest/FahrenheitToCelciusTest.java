@@ -18,7 +18,7 @@ public class FahrenheitToCelciusTest {
         // Act
         float result = f.f2C(32);
         // Assert
-        assertEquals(0,result);
+        assertEquals(0,result,0.01);
     }
     @Test
     public void fTO1() {
@@ -27,7 +27,7 @@ public class FahrenheitToCelciusTest {
         // Act
         float result = f.f2C(33.8f);
         // Assert
-        assertEquals(1,result);
+        assertEquals(1,result,0.01);
     }
     @Test
     public void fTO056() {
@@ -36,7 +36,7 @@ public class FahrenheitToCelciusTest {
         // Act
         float result = f.f2C(33f);
         // Assert
-        assertEquals(0.56,result);
+        assertEquals(0.56,result,0.01);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class FahrenheitToCelciusTest {
         // Act
         float result = f.f2C(20);
         // Assert
-        assertEquals(-6.67,result);
+        assertEquals(-6.67,result,0.01);
     }
 
 }

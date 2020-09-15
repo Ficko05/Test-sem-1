@@ -37,4 +37,15 @@ public class BaseAccount {
         destination.balance += amount;
 
     }
+
+    public void transfer(long amount, String destinationNumber) {
+        bank.getAccount(destinationNumber);
+    balance -= amount;
+    BaseAccount destination = bank.getAccount(destinationNumber);
+    destination.balance += amount;
+
+    }
+
+
+
 }
