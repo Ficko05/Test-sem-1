@@ -13,7 +13,7 @@ public class NumberToRomanNumeralTest {
     @Test
     public void mustBeAbleToCreateConverter() {
         // Arrange
-        NumberToRomanNumeralConverter c = new NumberToRomanNumeralConverter();
+        NumberToRomanNumeralConverter c = new NumberToRaomanNumeralConverter();
         // Act
         String result = c.convertRun(1);
 
