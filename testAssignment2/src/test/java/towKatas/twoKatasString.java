@@ -17,7 +17,7 @@ public class twoKatasString {
         // Act
         String result = kata.kataToLowerCase();
         // Assert
-        assertEquals("abc",result);
+        assertEquals("abc", result);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class twoKatasString {
         // Act
         String result = kata.kataToUpperCase();
         // Assert
-        assertEquals("ABC",result);
+        assertEquals("ABC", result);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class twoKatasString {
         // Act
         String result = kata.kataReverse();
         // Assert
-        assertEquals("cBa",result);
+        assertEquals("cBa", result);
     }
 
 
