@@ -39,3 +39,17 @@ Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful.
  -assumeFalse, assumeTrue  
  
  
+Mocking frameworks
+
+• What are their similarities?
+
+ hello
+ 
+• What are their differences?
+
+hello
+
+• Which one would you prefer, if any, and why?
+
+hello
+
