@@ -43,13 +43,13 @@ Mocking frameworks
 
 • What are their similarities?
 
- hello
+ I choose the frameworks Mockito and EasyMock, they are both really similar do to the fact that Mockito's first "hacks" was made on top of Easymock code.
  
 • What are their differences?
 
-hello
+The syntax is very similar with slight variations. Easymock you need to be more specific of what you expect as an outcome. ("more code").
 
 • Which one would you prefer, if any, and why?
 
-hello
+since they or so similar, I would mind on over the other, but if I had to choose I would choose Mockito. do to the fact you can write "less" code and its extra support for stubbing.
 
